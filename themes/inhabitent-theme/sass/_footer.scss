@@ -1,0 +1,31 @@
+.site-footer {
+  background-image: url("../../assets/images/dark-wood.png");
+  width: 100%;
+}
+
+.company-info{
+  display: flex;
+  justify-content: space-around;
+
+  p, 
+  & a:link{
+  color: $color_fonts;
+  }
+
+  & h3 {
+    color: $color_footer;
+  }
+
+  .footer-logo {
+    width: 17rem;
+    padding-top: 20px;
+
+}
+
+}
+
+.copyright {
+  text-transform: uppercase;
+  text-align: center;
+  color: $color_fonts;
+}
