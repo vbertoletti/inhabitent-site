@@ -483,10 +483,11 @@ a {
   clear: both;
   float: left;
   width: 100%; }
-  .main-navigation .menu {
-    list-style: none; }
-    .main-navigation .menu a:link, .main-navigation .menu a:visited {
-      color: white; }
+  .main-navigation .menu li:hover > ul,
+  .main-navigation .menu li.focus > ul {
+    left: 100%; }
+  .main-navigation .menu a:link, .main-navigation .menu a:visited {
+    color: white; }
   .main-navigation li:hover > ul,
   .main-navigation li.focus > ul {
     left: auto; }
@@ -535,6 +536,17 @@ a {
 .white-logo-container {
   width: 50px;
   height: 50px; }
+
+#primary-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 /*--------------------------------------------------------------
 # Accessibility
