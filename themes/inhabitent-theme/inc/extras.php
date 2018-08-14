@@ -50,7 +50,7 @@ add_action('login_head', 'inhabitent_login_logo');
  * The following changes the logo url 
  */
 
-function the_url( $url ) {
+function inhabitent_login_url( $url ) {
 	return get_bloginfo( 'url' );
 }
-add_filter( 'login_headerurl', 'the_url');
+add_filter( 'login_headerurl', 'inhabitent_login_url');

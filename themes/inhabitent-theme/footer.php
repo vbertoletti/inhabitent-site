@@ -14,11 +14,19 @@
 			<section class="company-info">
 
 			<div class="site-info">
+
 				<h3>CONTACT INFO</h3>
-			<p>
-				<a href="#">info@inhabitent.com</a>
-			</p>
-			<p>778-456-7891</p>
+				<p><a href="mailto:info@inhabitent.com">
+					<i class="fa fa-envelope">	info@inhabitent.com </i>
+				</a></p>
+	
+			<p><i class="fa fa-phone"></i>778-456-7891</p>
+
+			<div class="social-media-icons">
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter-square"></i>
+				<i class="fab fa-google-plus-square"></i>
+			</div>
 
 			</div><!-- .site-info -->
 
