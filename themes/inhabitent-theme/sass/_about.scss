@@ -1,0 +1,25 @@
+.hero-image-header {
+  height: 45rem;
+
+  .entry-title {
+    text-transform: uppercase;
+    color: $color_fonts;
+    font-size: 50px;
+
+ 
+  }
+}
+
+.entry-content h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+
+}
+
+.entry-content p {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: justify;
+
+}

@@ -712,6 +712,23 @@ object {
     text-align: center;
     top: 25vh; }
 
+.hero-image-header {
+  height: 45rem; }
+  .hero-image-header .entry-title {
+    text-transform: uppercase;
+    color: #ffff;
+    font-size: 50px; }
+
+.entry-content h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px; }
+
+.entry-content p {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: justify; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
