@@ -6,14 +6,20 @@
 .company-info{
   display: flex;
   justify-content: space-around;
+  line-height: 1.75;
+  font-size: 1.3rem;
 
   p, 
   & a:link{
   color: $color_fonts;
+  font-weight: 300;
+  font-style: normal;
   }
 
   & h3 {
     color: $color_footer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   .footer-logo {

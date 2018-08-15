@@ -28,10 +28,10 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 
-				<div class="white-logo-container">
+				<div class="logo-container">
 
 				<a href="http://localhost:3000/inhabitent/">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-tent-white.svg">
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-tent-white.svg"> -->
 
 				<img class="green-logo-container" src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-tent.svg">
 				</a>
@@ -39,12 +39,15 @@
 				</div>
 
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html('Primary Menu');?></button>
+
+					
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
 					<form class="search">
 						<input type="text">
 						<i class="fas fa-search" href="#"></i>
 						</input>
 				</form>
+					
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

@@ -15,7 +15,7 @@
 
 			<div class="site-info">
 
-				<h3>CONTACT INFO</h3>
+				<h3>contact info</h3>
 				<p><a href="mailto:info@inhabitent.com">
 					<i class="fa fa-envelope">	info@inhabitent.com </i>
 				</a></p>
@@ -31,7 +31,7 @@
 			</div><!-- .site-info -->
 
 			<div class="business-hours">
-			<h3>BUSINESS HOURS</h3>
+			<h3>business hours</h3>
 			<p><b>Monday-Friday:</b> 9am to 5pm</p>
 			<p><b>Saturday:</b> 10am to 12pm</p>
 			<p><b>Sunday:</b> Closed</p>
