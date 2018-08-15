@@ -31,7 +31,7 @@
 				<div class="logo-container">
 
 				<a href="http://localhost:3000/inhabitent/">
-				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-tent-white.svg"> -->
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-tent-white.svg"> -->
 
 				<img class="green-logo-container" src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-tent.svg">
 				</a>

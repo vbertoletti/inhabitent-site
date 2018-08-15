@@ -8,6 +8,31 @@
 
 </div>
 
+<div class="home-terms-container">
+<?php
+	 $terms = get_terms (array( 
+		'taxonomy' => 'product_type'
+	 ));
+?>
+<?php foreach ( $terms as $term ):  ?>
+
+<div class="home-images-container">
+	<img src="<?php echo get_template_directory_uri()?>/assets/images/<?php echo $term->name?>.svg">
+</div>
+
+<div class="home-description">
+	<p><?php echo $term->description; ?></p>
+</div>
+
+<div class="home-term-name">
+	<h2><?php echo $term->name . " stuff"; ?></h2>
+</div>
+
+<!-- <?php print_r($term) ?> shows what my options are-->
+
+<?php endforeach; ?>
+</div>
+
 
 <?php
    $args = array( 
@@ -26,7 +51,7 @@
 </div>
 
 <div class="home-meta-container"> 
-	<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+	<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
 </div>
 
 <div class="journal-content">
@@ -34,7 +59,7 @@
 </div>
 
 <div class="home-readmore">
-<a href="<?php the_permalink(); ?>">Read Entry</a>
+<span><a href="<?php the_permalink(); ?>">Read Entry</a></span>
 </div>
 
 </div> <!-- end of .home-posts-container -->

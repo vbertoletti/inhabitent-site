@@ -776,7 +776,8 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   line-height: 1.75;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  font-family: 'Merriweather, sans-serif'; }
   .company-info p,
   .company-info a:link {
     color: #ffff;
@@ -801,3 +802,6 @@ object {
 
 .fa-phone, .fa-envelope {
   padding-right: 10px; }
+
+.site-info {
+  font-family: 'Merriweather, sans-serif'; }
