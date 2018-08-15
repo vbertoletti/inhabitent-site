@@ -766,34 +766,6 @@ object {
   margin-right: 10%;
   margin-top: 3%; }
 
-.entry-header {
-  position: relative; }
-  .entry-header img {
-    width: 100%; }
-
-.entry-title, .entry-meta {
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffff;
-  background-color: #248a83;
-  position: absolute; }
-  .entry-title a:link, .entry-title a:visited, .entry-meta a:link, .entry-meta a:visited {
-    color: #ffff; }
-  .entry-title a:hover, .entry-meta a:hover {
-    color: #fff9c0; }
-
-.entry-meta {
-  top: 94%;
-  right: 0;
-  height: 25px;
-  width: 400px; }
-
-.entry-title {
-  top: 0rem;
-  height: 100px;
-  width: 500px;
-  font-size: 30px; }
-
 .widget_text {
   padding-bottom: 2px; }
   .widget_text p {
