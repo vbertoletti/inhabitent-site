@@ -11,14 +11,30 @@ get_header(); ?>
 	<div id="primary" class="about-content-area">
 		<main id="main" class="site-main" role="main">
 
+			<section class="about-wrapper">
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?> 
+			 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<?php endwhile; // End of the loop. ?>
+	<div class="entry-content">
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+</article><!-- #post-## -->
 
 
-		</main> <!-- #main -->
-	</div><!-- #primary -->
+			<?php endwhile; ?>
+
+
+			</section>
+
+		</main> 
+	</div>
 
 <?php get_footer(); ?>

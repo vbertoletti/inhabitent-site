@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying product archive page.
+ * The template for displaying taxonomy product type. 
  *
  * @package RED_Starter_Theme
  */
@@ -8,16 +8,19 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-
-		<header class="shop-header">
-			<h1> shop stuff </h1>
-		</header><!-- .shop-header -->
+		<main id="main" class="site-main" role="main">
 
 
   <div class="products-section-wrapper">
 
 		<?php if ( have_posts() ) : ?>
+
+		<header class="shop-header">
+			<?php
+				the_archive_title( '<h1 class="page-title">', '</h1>' );
+			?>
+		</header><!-- .shop-header -->
+
 
 	<!-- loop over terms and echo them to the screen -->
 			<?php
@@ -27,16 +30,13 @@ get_header(); ?>
 			?>
 
 			<?php foreach ( $terms as $term ):  ?>
-				 
-				<section class="terms-container">
-				<a href="#">
-				<p><?php echo $term->name; ?></p>
-				</a>
-			
-			<?php endforeach; ?>
-			</section>
-			</div>
+		 	
+				<a href= " <?php echo ' . esc_url( $term_link ) . $term->name>' ?>" </a>
 	
+			<?php endforeach; ?>
+
+
+
 			<?php /* Start the Loop on products */ ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -50,8 +50,8 @@ get_header(); ?>
 						<div class="product-related-info">
 
 						<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-		
-						<p class="price"> ................. <?php echo CFS()->get( 'price' ); ?></p>
+						<span>.................</span>
+						<span class="price"><?php echo CFS()->get( 'price' ); ?></span>
 
 						</div>
 
@@ -67,11 +67,10 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-    </div> <!-- .products-section-wrapper -->
+    </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 
 <?php get_footer(); ?>
-

@@ -1,0 +1,20 @@
+.shop-header {
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  width: 100vw;
+  text-align: center;
+
+
+}
+
+.terms-container {
+  display: flex;
+  flex-direction: row;
+
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color_nav;
+  }
+
+}

@@ -1,11 +1,4 @@
 
-.front-page-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-
 .hero-banner {
   background-image:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), url("../../assets/images/home-hero.jpg");
   background-size: cover, cover;
@@ -21,6 +14,8 @@
       }
 }
 
+// shop stuff section begins
+
 .home-shop-stuff {
     width: 100%;
     margin: 3rem;
@@ -28,6 +23,13 @@
     text-transform: uppercase;
     font-size: 1.3rem;
     letter-spacing: 2px;
+
+    h2 {
+        font-family: 'Novecento Sans Web';
+        font-weight: normal;
+        font-style: normal;
+    
+    }
 }
 
 .home-terms-container:hover {
@@ -39,7 +41,7 @@
     background: #19625d;
 }
 
-.lala {
+.home-shop-stuff-wrapper {
     display: flex;
     justify-content: center;
     margin-right: 100px;
@@ -85,24 +87,85 @@
     }
 }
 
-.home-posts-container {
+// blog section begins
+
+.main-blog-wrapper {
     display:flex;
-    flex-direction: column;
-    width: 33.33%;
-    border: 1px solid #e1e1e1;
-    
+    flex-direction: row;
+    width: 100%;
 
-
-    .home-readmore a{
-        border: 1px solid black;
-        cursor: pointer;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-        padding: 10px;
-
-    }
 }
+
+.home-blog-posts-wrapper{
+display: flex;
+flex-direction: column;
+width: 200px;
+}
+
+
+// .home-posts-container {
+//     display:flex;
+//     flex-direction: column;
+//     width: 33%;
+
+//     .home-readmore a{
+//         border: 1px solid black;
+//         cursor: pointer;
+//         text-decoration: none;
+//         text-transform: uppercase;
+//         color: black;
+//         font-size: .9rem;
+//         padding: 10px 20px;
+
+//     }
+// }
+
+// .home-readmore a:hover {
+//     background: $color_nav;
+//     color:white;
+//     border:0;
+
+// }
+
+// .below-photo-styles {
+    
+//     height: 170px;
+//     width: 360px;
+//     margin-right: 20px;
+//     padding-left: 10px;
+//     border: 1px solid #e1e1e1;
+
+//     a {
+//         text-decoration: none;
+//         text-transform: uppercase;
+//         color: $color_nav;
+
+//     }
+
+//     .journal-content {
+//         letter-spacing: 2px;
+
+//         & a:hover {
+//             color: $color__text-main;
+//         }
+//     }
+
+//     .home-meta-container {
+//         font-size: .85rem;
+//         font-family: Merriweather Web,serif;
+//         padding-top: 10px;
+
+//     }
+
+// }
+
+// .home-image-container img {
+//     max-height: 250px;
+//     max-width: none;
+//     width: auto;
+//     border-bottom: 5px solid #e1e1e1;
+// }
+
 
 
   
