@@ -521,8 +521,6 @@ a {
     color: #404040; }
   .main-navigation .search input {
     width: 0;
-    -webkit-transition: width 2s;
-    transition: width 2s;
     border: 0;
     background-color: rgba(255, 255, 255, 0); }
   .main-navigation .search .fa-search {
@@ -701,6 +699,13 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .hero-banner {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../assets/images/home-hero.jpg");
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/home-hero.jpg");
@@ -711,6 +716,58 @@ object {
     position: relative;
     text-align: center;
     top: 25vh; }
+
+.home-shop-stuff {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px; }
+
+.home-terms-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin: 30px; }
+  .home-terms-container img {
+    width: 60px; }
+  .home-terms-container h3, .home-terms-container a {
+    background-color: #248a83;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    width: 150px;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif; }
+
+.home-posts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33.33%;
+  border: 1px solid #e1e1e1; }
+  .home-posts-container .home-readmore a {
+    border: 1px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px; }
 
 .hero-image-header {
   height: 45rem; }
