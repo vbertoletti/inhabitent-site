@@ -20,7 +20,7 @@
 	 	));
 		?>
 
-	
+		<section class="lala">
 		<?php foreach ( $terms as $term ):  ?>
 		<div class="home-terms-container">
 			 
@@ -28,16 +28,17 @@
 	
 	
 			<p><?php echo $term->description; ?></p>
-
-			<a href="#">
-			<h3><?php echo $term->name . " stuff"; ?></h3>
-			</a>
+		 
+		 	
+				<a href="#"><?php echo $term->name . " stuff"; ?></a>
+	
 
 		</div> <!-- end of .home-terms-container -->
 
 	<!-- <?php print_r($term) ?> shows what my options are-->
 
 		<?php endforeach; ?>
+	</section>
 
 
 	<div class="home-shop-stuff">

@@ -719,9 +719,27 @@ object {
 
 .home-shop-stuff {
   width: 100%;
+  margin: 3rem;
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px; }
+  font-size: 1.3rem;
+  letter-spacing: 2px; }
+
+.home-terms-container:hover {
+  border-color: #d99054; }
+
+.home-terms-container a:hover {
+  background: #19625d; }
+
+.lala {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 100px;
+  margin-left: 100px; }
 
 .home-terms-container {
   display: -webkit-box;
@@ -734,22 +752,31 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20%;
+  width: 22%;
   border: 1px solid #e1e1e1;
-  padding: 10px;
-  margin: 30px; }
+  border-top-width: 5px;
+  padding: 20px;
+  margin-left: 20px; }
   .home-terms-container img {
     width: 60px; }
-  .home-terms-container h3, .home-terms-container a {
+  .home-terms-container a {
     background-color: #248a83;
     color: #ffff;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    font-size: 15px;
-    width: 150px;
+    font-size: 0.9rem;
     cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif; }
+    font-family: Novecento Sans Web,sans-serif;
+    height: 40px;
+    width: 120px;
+    padding-top: 10px; }
+  .home-terms-container P {
+    font-family: Merriweather Web,serif;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    color: #404040;
+    text-align: center; }
 
 .home-posts-container {
   display: -webkit-box;
