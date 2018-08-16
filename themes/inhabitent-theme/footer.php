@@ -14,20 +14,18 @@
 			<section class="company-info">
 
 			<div class="site-info">
-
 				<h3>contact info</h3>
 				<p><a href="mailto:info@inhabitent.com">
 					<i class="fa fa-envelope">	info@inhabitent.com </i>
 				</a></p>
-	
-			<p><i class="fa fa-phone"></i>778-456-7891</p>
 
-			<div class="social-media-icons">
+				<p><i class="fa fa-phone"></i>778-456-7891</p>
+
+				<div class="social-media-icons">
 				<i class="fab fa-facebook-square"></i>
 				<i class="fab fa-twitter-square"></i>
 				<i class="fab fa-google-plus-square"></i>
-			</div>
-
+				</div>
 			</div><!-- .site-info -->
 
 			<div class="business-hours">
@@ -35,17 +33,18 @@
 			<p><b>Monday-Friday:</b> 9am to 5pm</p>
 			<p><b>Saturday:</b> 10am to 12pm</p>
 			<p><b>Sunday:</b> Closed</p>
-		</div>
-		<div class="footer-logo">
+			</div>
+
+			<div class="footer-logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-text.svg">
-		</div>
+			</div>
 
-		</section>
+			</section>
 
-		<div class="copyright">
-		<?php $current_year = date("Y");
-		echo ('copyright ' . '&copy; ' . $current_year . ' inhabitent');?>
-	</div>
+			<div class="copyright">
+			<?php $current_year = date("Y");
+			echo ('copyright ' . '&copy; ' . $current_year . ' inhabitent');?>
+			</div>
 
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
