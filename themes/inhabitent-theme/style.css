@@ -765,12 +765,12 @@ object {
     text-align: center;
     font-size: 0.9rem;
     cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: Novecento Sans Web, sans-serif;
     height: 40px;
     width: 120px;
     padding-top: 10px; }
-  .home-terms-container P {
-    font-family: Merriweather Web,serif;
+  .home-terms-container p {
+    font-family: Merriweather Web, serif;
     font-size: 1.2rem;
     line-height: 1.75;
     color: #404040;
@@ -784,7 +784,12 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 100%; }
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .home-blog-posts-wrapper {
   display: -webkit-box;
@@ -794,7 +799,46 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 200px; }
+  width: 25%;
+  border: 1px solid #e1e1e1;
+  margin-right: 20px; }
+  .home-blog-posts-wrapper .meta-data-journal {
+    margin-left: 10px;
+    font-size: 0.85rem;
+    font-family: Merriweather Web, serif;
+    padding-top: 10px; }
+  .home-blog-posts-wrapper .journal-content {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 10px; }
+    .home-blog-posts-wrapper .journal-content a {
+      text-decoration: none;
+      color: #248a83; }
+    .home-blog-posts-wrapper .journal-content a:hover {
+      color: #404040; }
+  .home-blog-posts-wrapper img {
+    border-bottom: 5px solid #e1e1e1; }
+
+.read-entry {
+  border: 1px solid black;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  width: 150px;
+  padding: 10px 20px;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+  .read-entry a:link,
+  .read-entry a:visited {
+    color: black;
+    text-decoration: none; }
+
+.read-entry:hover {
+  background: #248a83;
+  border: 0; }
+  .read-entry:hover a {
+    color: #ffff; }
 
 .hero-image-header {
   height: 45rem; }

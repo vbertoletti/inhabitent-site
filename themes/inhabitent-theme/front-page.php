@@ -58,21 +58,29 @@
 			<?php foreach ($product_posts as $post): setup_postdata($post);?>
 		<div class="home-blog-posts-wrapper">
 
+
 			<?php	the_post_thumbnail();?>
 	
+			<span class="meta-data-journal">
 			<?php inhabitent_posted_on();?> / <?php comments_number('0 Comments', '1 Comment', '% Comments');?>
-		
-		<h3 class="journal-content">
-			<a href="<?php the_permalink();?>" title="<?php the_title_attribute();?>"><?php the_title();?></a>
-		</h3>
-	
-			<a class="home-readmore" href="<?php the_permalink();?>">Read Entry</a>
+			</span>
+
+			<h3 class="journal-content">
+				<a href="<?php the_permalink();?>" title="<?php the_title_attribute();?>"><?php the_title();?></a>
+			</h3>
+			
+			<span class="read-entry">
+			<a href="<?php the_permalink();?>">Read Entry</a>
+			</span>
 
 			</div>
 		<?php endforeach;
 		wp_reset_postdata();?>
 
-</section><!-- end of front-page section -->
+
+
+
+
 
 
 <?php get_footer();?>
