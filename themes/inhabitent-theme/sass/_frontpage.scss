@@ -118,12 +118,10 @@
     a {
       text-decoration: none;
       color: $color_nav;
-
     }
     & a:hover {
-        color: $color__text-main;
-      }
-    
+      color: $color__text-main;
+    }
   }
 
   img {
@@ -148,81 +146,129 @@
     color: black;
     text-decoration: none;
   }
- 
 }
 
 .read-entry:hover {
-    background: $color_nav;
-    border: 0;
-    a{
-        color: $color_fonts;
-    }
-
-   
+  background: $color_nav;
+  border: 0;
+  a {
+    color: $color_fonts;
+  }
 }
 
-// latest adventures grid 
+// latest adventures section
 
-.latest-adventures h2 {
-  font-family: 'Novecento Sans Web';
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 2rem;
-  text-align: center;
-  letter-spacing: 2px;
-  padding-bottom: 50px;
+.latest-adventures {
+  h2 {
+    font-family: 'Novecento Sans Web';
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: 50px;
+  }
 
+  h3 {
+    font-family: 'Merriweather Web', serif;
+    color: $color_fonts;
+    letter-spacing: 3px;
+    font-size: 2rem;
+  }
 }
 
-.latest-adventures ul {
-  display: grid;
-  grid-gap: 20px 20px;
-  height: 70vh;
-  padding-bottom: 100px;
-  list-style-type: none;
-  margin-right: 70px;
+.boxone {
+  display: flex;
+  width: 100vw;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-.latest-adventures li:first-child {
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
-
-
+.one {
+  height: 520px;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../../assets/images/canoe-girl.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
 }
-
-.latest-adventures li:nth-child(2) {
-  grid-column: 3 / 5;
-  grid-row: 1 / 2;
-}
-
-.latest-adventures li:nth-child(3) {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-
-}
-
-.latest-adventures li:last-child {
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
-
-}
-
-.latest-adventures li {
-  overflow: hidden;
+.onex {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px;
+  height: 580px;
   
 }
+.boxtwo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 50%;
+}
+.two {
+  height: 250px;
+  width: 90%;
+  margin: 10px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../../assets/images/beach-bonfire.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+}
+.three {
+  height: 250px;
+  width: 44%;
+  margin: 10px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../../assets/images/mountain-hikers.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+}
+.four {
+  height: 250px;
+  width: 44%;
+  margin: 10px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../../assets/images/night-sky.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+}
 
-.more a{
-  background: #248A83;
-  text-decoration: none;
-  font-family: "Novecentos", sans-serif;
+.adventures-readentry {
+  text-transform: uppercase;
+  color: $color_fonts;
+  border: 1px solid white;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.more-adventures-button {
+  background: #248a83;
+  color: $color_fonts;
+  font-family: 'Novecentos', sans-serif;
   padding: 10px 20px;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-
-.more a:visited, a:link {
-  color: white;
-
+.more-adventures-button:hover {
+  background: #19625d;
+  cursor: pointer;
 }

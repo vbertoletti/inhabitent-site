@@ -27,8 +27,9 @@
 			<?php foreach ( $terms as $term ):  ?>
 				 
 				<section class="terms-container">
-				<a href="#">
-				<p><?php echo $term->name; ?></p>
+				<a href="<?php echo get_term_link($term); ?>">
+				<p><?php echo $term->name; ?>
+				</p>
 				</a>
 			
 			<?php endforeach; ?>

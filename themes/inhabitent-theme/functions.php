@@ -96,6 +96,11 @@ function inhabitent_scripts()
   
     wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 
+    // adding jquery dependency to js 
+  
+    wp_enqueue_script('script', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), true);
+   
+
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }

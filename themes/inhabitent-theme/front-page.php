@@ -29,7 +29,9 @@
 
 			<p><?php echo $term->description; ?></p>
 
-				<a href="#"><?php echo $term->name . " stuff"; ?></a>
+				<a href="<?php echo get_term_link($term); ?>">
+				<?php echo $term->name . " stuff"; ?>
+				</a>
 
 			</div> <!-- end of .home-terms-container -->
 
@@ -79,73 +81,44 @@
 		</section>
 
 
-		<section class="latest-adventures">
+	<section class="latest-adventures">
 
-			<h2>Latest Adventures</h2>
+	<h2>Latest Adventures</h2>
 
-			<ul>
-
-						<li>
-							<div class="photo-wrapper">							
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/canoe-girl.jpg">
-							</div>
-							
-							<div class="subtitle-wrapper">
-								<h3 class="adventure-title">
-									<a href="#">Getting Back to Nature in a Canoe</a>
-								</h3>
-								<a class="read-entry-button" href="#">Read More</a>
-							</div>
-						</li>
-							
-						<li>
-							<div class="photo-wrapper">							
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/beach-bonfire.jpg">
-							</div>
-							
-							<div class="subtitle-wrapper">
-								<h3 class="adventure-title">
-									<a href="#">A Night with Friends at the Beach</a>
-								</h3>
-								<a class="read-entry-button" href="#">Read More</a>
-							</div>
-						</li>
-
-						<li>
-							<div class="photo-wrapper">							
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountain-hikers.jpg">
-							</div>
-							
-							<div class="subtitle-wrapper">
-								<h3 class="adventure-title">
-									<a href="#">Taking in the View at Big Mountain</a>
-								</h3>
-								<a class="read-entry-button" href="#">Read More</a>
-							</div>
-						</li>
-
-						<li>
-							<div class="photo-wrapper">							
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/night-sky.jpg">
-							</div>
-							
-							<div class="subtitle-wrapper">
-								<h3 class="adventure-title">
-									<a href="#">Star-Gazing at the Night Sky</a>
-								</h3>
-								<a class="read-entry-button" href="#">Read More</a>
-							</div>
-						</li>
-
-					</ul>
-
-					<span class="more">
-						<a class = "more-button" href="#">More Adventure</a>
-				</span>
+	<section class="boxone">
+  
+	<div class="onex">
+	<div class="one">
+	<h3>Getting Back to Nature in a Canoe</h3>
+	<span class="adventures-readentry">read more</span>
+	</div>
+	</div>
 
 
+	<div class="boxtwo">
+	<div class="two">
+	<h3>A Night with Friends at the Beach</h3>
+	<span class="adventures-readentry">read more</span>
+	</div>
 
-		</section>
+
+	<div class="three">
+	<h3>Taking in the View at Big Mountain</h3>
+	<span class="adventures-readentry">read more</span>
+	</div>
+
+
+	<div class="four">
+	<h3>Star-Gazing at the Night Sky</h3>
+	<span class="adventures-readentry">read more</span>
+	</div>
+
+	</div>
+	</section>
+
+	<span class="more-adventures-button">More Adventure</span> 
+
+</section>
 
 
 <?php get_footer();?>
