@@ -43,8 +43,8 @@
 
 					
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
-					<form class="search">
-						<input class="input-field" type="text">
+						<form class="search" action="/" method="get">
+						<input class="input-field" type="text" name="s" value="<?php the_search_query(); ?>">
 						<i class="fas fa-search" href="#"></i>
 						</input>
 					</form>
