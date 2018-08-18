@@ -1,0 +1,65 @@
+// SINGLE-PRODUCT PAGE 
+
+.site-main-single{
+  display:flex;
+  margin: 50px;
+}
+
+.attachment-large{
+  height: 300px;
+  width: 1200px;
+  margin-top:2rem;
+}
+
+.entry-title-single{
+  color: #d99054;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.price-container {
+  font-family: 'Novecento Sans Web';
+  font-size: 2rem;
+}
+
+
+.single-product article{
+  display:flex;
+
+}
+
+.single-product p{
+  max-width: 900px;
+  font-family: 'Merriweather';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+.single-page-content{
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+.social-media{
+  border: 1px solid black;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  font-weight: normal;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  text-align: center;
+  margin-right: 10px;
+
+  &:hover {
+    background: $color_nav;
+    border: 0;
+    color: $color_fonts;
+
+}
+}

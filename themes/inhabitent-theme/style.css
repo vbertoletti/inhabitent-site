@@ -1091,6 +1091,61 @@ object {
   height: 300px;
   margin-bottom: 4rem; }
 
+.site-main-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px; }
+
+.attachment-large {
+  height: 300px;
+  width: 1200px;
+  margin-top: 2rem; }
+
+.entry-title-single {
+  color: #d99054;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  margin-bottom: 0; }
+
+.price-container {
+  font-family: 'Novecento Sans Web';
+  font-size: 2rem; }
+
+.single-product article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-product p {
+  max-width: 900px;
+  font-family: 'Merriweather';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.7rem; }
+
+.single-page-content {
+  margin-left: 50px;
+  margin-bottom: 50px; }
+
+.social-media {
+  border: 1px solid black;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  font-weight: normal;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  text-align: center;
+  margin-right: 10px; }
+  .social-media:hover {
+    background: #248a83;
+    border: 0;
+    color: #ffff; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1152,7 +1207,7 @@ object {
     color: #d99054;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: 'Novecento Sans Web';
     font-size: 1.1rem; }
   .company-info .footer-logo {
     width: 17rem;
@@ -1161,7 +1216,7 @@ object {
 .copyright {
   text-transform: uppercase;
   text-align: center;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: 'Novecento Sans Web';
   font-size: 1rem;
   color: #ffff; }
 
