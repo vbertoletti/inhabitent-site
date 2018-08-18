@@ -1,0 +1,66 @@
+#post-62 {
+	max-width: 80vw;
+	margin-left: 15%;
+	margin-top: 5%;
+  padding-right: 50px;
+  
+  .entry-header {
+    text-transform: uppercase;
+    padding-top: 30px;
+  }
+
+  figure {
+    margin: 0;
+    
+
+    iframe {
+      border: none;
+    }
+  }
+
+  .entry-content {
+    h2 {
+      font-size: 2.1rem;
+      color: #2f1339;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-family: 'Merriweather';
+
+      .wpcf7-text, textarea {
+      color: #666;
+      background-color: #f4f4f4;
+      border: 1px solid #e1e1e1;
+      border-radius: 0;
+      }
+
+    }
+  }
+}
+
+.wpcf7-form {
+
+  .wpcf7-submit{
+    background-color: #248a83;
+    border: none;
+    border-radius: 0;
+    color: $color_fonts;
+    font-family: 'Novecento Sans Web';
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+  }
+
+
+  label {
+    font-family: 'Novecento Sans Web';
+    color: #2f1339;
+  }
+
+  span {
+    color: #d99054;
+  }
+}
+
