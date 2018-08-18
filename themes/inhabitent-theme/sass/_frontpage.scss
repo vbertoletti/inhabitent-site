@@ -1,3 +1,7 @@
+// hero banner/header
+
+
+
 .hero-banner {
   background-image: linear-gradient(
       180deg,
@@ -16,7 +20,11 @@
   }
 }
 
+
+
 // shop stuff section begins
+
+
 
 .home-shop-stuff {
   width: 100%;
@@ -85,7 +93,9 @@
   }
 }
 
+
 // blog section begins
+
 
 .main-blog-wrapper {
   display: flex;
@@ -156,7 +166,9 @@
   }
 }
 
+
 // latest adventures section
+
 
 .latest-adventures {
   h2 {
@@ -166,22 +178,40 @@
     font-size: 2rem;
     text-align: center;
     letter-spacing: 2px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   h3 {
-    font-family: 'Merriweather Web', serif;
+    font-family: 'Merriweather';  
+    font-weight: 300;
     color: $color_fonts;
-    letter-spacing: 3px;
-    font-size: 2rem;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:hover {
+      color: $color_hover;
+      cursor: pointer;
+    }
   }
 }
 
-.boxone {
+.canoe-girl-heading {
+  font-size: 3rem;
+}
+.friends-beach-heading {
+  font-size: 2.2rem;
+}
+.mountain-and-night {
+  font-size: 1.2rem;
+}
+
+.journal-main-box {
   display: flex;
   width: 100vw;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-bottom: 50px;
 }
 
 .one {
@@ -196,15 +226,14 @@
   background-size: cover, cover;
   background-position: center, center;
 }
-.onex {
+.canoe-girl {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: 10px;
   height: 580px;
-  
 }
-.boxtwo {
+.friends-beach {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -224,7 +253,7 @@
   background-size: cover, cover;
   background-position: center, center;
 }
-.three {
+.big-mountain {
   height: 250px;
   width: 44%;
   margin: 10px;
@@ -237,7 +266,7 @@
   background-size: cover, cover;
   background-position: center, center;
 }
-.four {
+.night-sky {
   height: 250px;
   width: 44%;
   margin: 10px;
@@ -257,6 +286,12 @@
   border: 1px solid white;
   padding: 10px;
   margin-left: 20px;
+  &:hover {
+    background: #248a83;
+    border: 0;
+    color: $color_fonts;
+    cursor: pointer;
+  }
 }
 
 .more-adventures-button {
@@ -266,9 +301,13 @@
   padding: 10px 20px;
   text-transform: uppercase;
   font-size: 1rem;
-}
+  width: 210px;
+  text-align: center;
+  margin-top: 20px;
 
-.more-adventures-button:hover {
-  background: #19625d;
-  cursor: pointer;
+
+  &:hover {
+    background: #19625d;
+    cursor: pointer;
+  }
 }

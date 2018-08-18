@@ -91,18 +91,38 @@ display: block;
     color: #404040;
   }
 
-  .search {
-    .input-field {
-			display: inline;
-      border: 0;
-			background-color: red;
-    }
-    .fa-search {
-			color: $color_nav;
-			padding-right: 5rem;
-    }
-  }
+ 
+
 }
+
+.search-field {
+	display: none;
+	background: transparent;
+	border: 0;
+	width: 200px;
+	// transition: width .60s ease-in-out;
+		
+}
+
+
+
+.icon-search i {
+	color: $color_nav;
+}
+
+fieldset {
+	border: 0;
+
+	.search-submit {
+		border: none;
+		padding: 0;
+	}
+}
+
+
+
+
+
 
 
 

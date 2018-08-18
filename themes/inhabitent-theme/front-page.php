@@ -85,38 +85,40 @@
 
 	<h2>Latest Adventures</h2>
 
-	<section class="boxone">
+	<section class="journal-main-box">
   
-	<div class="onex">
+	<div class="canoe-girl">
 	<div class="one">
-	<h3>Getting Back to Nature in a Canoe</h3>
+	<h3 class="canoe-girl-heading">Getting Back to Nature in a Canoe</h3>
 	<span class="adventures-readentry">read more</span>
 	</div>
+	<span class="more-adventures-button">More Adventures</span> 
 	</div>
 
 
-	<div class="boxtwo">
+	<div class="friends-beach">
 	<div class="two">
-	<h3>A Night with Friends at the Beach</h3>
+	<h3 class="friends-beach-heading">A Night with Friends at the Beach</h3>
 	<span class="adventures-readentry">read more</span>
 	</div>
 
 
-	<div class="three">
-	<h3>Taking in the View at Big Mountain</h3>
+	<div class="big-mountain">
+	<h3 class="mountain-and-night">Taking in the View at Big Mountain</h3>
 	<span class="adventures-readentry">read more</span>
 	</div>
 
 
-	<div class="four">
-	<h3>Star-Gazing at the Night Sky</h3>
+	<div class="night-sky">
+	<h3 class="mountain-and-night">Star-Gazing at the Night Sky</h3>
 	<span class="adventures-readentry">read more</span>
 	</div>
-
+	
 	</div>
+	
 	</section>
 
-	<span class="more-adventures-button">More Adventure</span> 
+	
 
 </section>
 
