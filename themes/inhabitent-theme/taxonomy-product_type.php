@@ -1,77 +1,55 @@
 <?php
 /**
- * The template for displaying taxonomy product type. 
+ * The template for displaying taxonomy product_type.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
+
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+
+      <?php if ( have_posts() ) : ?>
+
+        <header class="taxonomy-header-box">
+          <h1><?php
+            	single_term_title( $prefix = '', $display = true );?></h1>
+
+           	 <?php
+            the_archive_description( '<p>', '</p>' );?>
+				</header>
+				
 
 
-  <div class="products-section-wrapper">
+        <div class="taxonomy-products-box">
+                
+					<?php while ( have_posts() ) : the_post(); ?>
+                
+        	<div class="product-description-box">
+           
+              <a href=<?php echo get_post_permalink() ?>><?php the_post_thumbnail( 'medium' ); ?></a>
+              
+            <div class="product-related-info">
 
-		<?php if ( have_posts() ) : ?>
+						<?php the_title( '<p class="entry-title">', '</p>' ); ?>
+						
+              <span>............</span>
+              <span><?php echo CFS()->get( 'price' ); ?></span>
+              </div> <!--product-related-info-->
+							</div> <!--product-description-box-->
+							
+            <?php endwhile; ?>
+            </div><!--taxonomy-products-box-->
 
-		<header class="shop-header">
-	
-   
-			<h1><?php single_term_title('', 'false') ?> </h1> 
-			<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );?>
-		</header><!-- .shop-header -->
+        	<?php else : ?>
+           	<?php get_template_part( 'template-parts/content', 'none' ); ?>
+        	<?php endif; ?>
 
+    </main><!-- #main -->
 
-	<!-- loop over terms and echo them to the screen -->
-			<?php
-	 			$terms = get_terms (array( 
-				'taxonomy' => 'product_type',
-	 			));
-			?>
-
-			<?php foreach ( $terms as $term ):  ?>
-		 	
-				<a href= " <?php echo ' . esc_url( $term_link ) . $term->name>' ?>" </a>
-	
-			<?php endforeach; ?>
-
-
-
-			<?php /* Start the Loop on products */ ?>
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-					<?php if ( has_post_thumbnail() ) : ?>
-						<a href=<?php echo get_post_permalink() ?>><?php the_post_thumbnail( 'medium' ); ?></a>
-						<?php endif; ?>
-											
-						<div class="product-related-info">
-
-						<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-						<span>.................</span>
-						<span class="price"><?php echo CFS()->get( 'price' ); ?></span>
-
-						</div>
-
-				</article>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-    </div>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+  </div><!-- #primary -->
 
 <?php get_footer(); ?>
+
