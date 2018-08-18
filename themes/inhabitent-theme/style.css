@@ -968,27 +968,27 @@ object {
     background: #19625d;
     cursor: pointer; }
 
-#post-45 {
-  margin: 0; }
-
-.hero-image-header {
-  width: 100vw;
-  height: 100vh; }
-  .hero-image-header .entry-title {
+.about-content-area {
+  width: 100%; }
+  .about-content-area .hero-image-header {
+    height: 100vh; }
+  .about-content-area .entry-content {
+    margin-top: 0; }
+  .about-content-area h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase; }
+  .about-content-area h2 {
     text-transform: uppercase;
-    color: #ffff;
-    font-size: 50px; }
-
-.entry-content h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 30px; }
-
-.entry-content p {
-  text-align: justify;
-  color: #404040;
-  font-family: Merriweather Web,serif;
-  font-size: 1.2rem; }
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2rem; }
+  .about-content-area p {
+    width: 900px;
+    margin: auto;
+    padding-bottom: 30px;
+    font-family: 'Merriweather';
+    letter-spacing: .5px; }
 
 .shop-header {
   width: 100vw;
@@ -1156,7 +1156,7 @@ object {
   display: flex;
   max-width: 100vw; }
 
-.status-publish {
+.has-post-thumbnail {
   max-width: 80vw;
   margin-left: 15%;
   margin-top: 5%;
