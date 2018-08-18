@@ -1,14 +1,18 @@
+#post-45 {
+  margin: 0;
+}
+
 .hero-image-header {
-  height: 45rem;
+  width: 100vw;
+  height: 100vh;
 
   .entry-title {
     text-transform: uppercase;
     color: $color_fonts;
     font-size: 50px;
-
- 
   }
 }
+
 
 
 

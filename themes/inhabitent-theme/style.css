@@ -968,8 +968,12 @@ object {
     background: #19625d;
     cursor: pointer; }
 
+#post-45 {
+  margin: 0; }
+
 .hero-image-header {
-  height: 45rem; }
+  width: 100vw;
+  height: 100vh; }
   .hero-image-header .entry-title {
     text-transform: uppercase;
     color: #ffff;
@@ -1164,11 +1168,32 @@ object {
   padding-left: 50px;
   margin-right: 10%;
   margin-top: 3%; }
+  .widget-area .sidebar-contact-info {
+    color: #248a83; }
+    .widget-area .sidebar-contact-info:hover {
+      cursor: pointer;
+      color: #404040; }
+    .widget-area .sidebar-contact-info i {
+      color: #404040; }
+  .widget-area .tent-biz-hours-class {
+    font-family: 'Merriweather'; }
+    .widget-area .tent-biz-hours-class span {
+      font-weight: bold; }
 
-.widget_text {
-  padding-bottom: 2px; }
-  .widget_text p {
-    font-size: 20px; }
+#archives-2 ul {
+  padding: 0; }
+  #archives-2 ul li {
+    font-family: 'Merriweather';
+    color: #248a83; }
+    #archives-2 ul li a:hover {
+      color: #404040; }
+
+.textwidget {
+  padding-bottom: 2px;
+  font-family: 'Merriweather';
+  font-size: 1rem; }
+  .textwidget i {
+    padding-right: 10px; }
 
 .widget_archive ul {
   margin-left: 0;
