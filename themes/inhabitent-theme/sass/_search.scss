@@ -1,0 +1,46 @@
+.search-results{
+
+	.site-content {
+    padding-top: 4rem;
+    display: flex;
+    margin-bottom: 5rem;
+  }
+
+	.page-header {
+    text-transform: uppercase;
+    padding-left: 9.5rem;
+    border-bottom: 1px solid $color__background-pre;
+    
+  }
+  
+  .entry-meta {
+    font-family: 'Merriweather';
+
+  }
+	.black-btn {
+		border: 1px solid #000000;
+		padding: 1rem;
+	}
+	a.black-btn {
+		text-decoration: none;
+		color: #000000;
+	}
+	.entry-title a {
+		text-decoration: none;
+		color: #248a83;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+	}
+	#post-49 {
+		display: none;
+	}
+	#post-83 {
+		display: none;
+  }
+  
+}
+
+.entry-summary p {
+  font-family: 'Merriweather';
+}

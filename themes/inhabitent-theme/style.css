@@ -1188,6 +1188,45 @@ object {
     border: 0;
     color: #ffff; }
 
+.search-results .site-content {
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5rem; }
+
+.search-results .page-header {
+  text-transform: uppercase;
+  padding-left: 9.5rem;
+  border-bottom: 1px solid #eee; }
+
+.search-results .entry-meta {
+  font-family: 'Merriweather'; }
+
+.search-results .black-btn {
+  border: 1px solid #000000;
+  padding: 1rem; }
+
+.search-results a.black-btn {
+  text-decoration: none;
+  color: #000000; }
+
+.search-results .entry-title a {
+  text-decoration: none;
+  color: #248a83;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem; }
+
+.search-results #post-49 {
+  display: none; }
+
+.search-results #post-83 {
+  display: none; }
+
+.entry-summary p {
+  font-family: 'Merriweather'; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
