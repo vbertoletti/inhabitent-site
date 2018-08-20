@@ -1,68 +1,223 @@
-// .journal-main-container {
-//   padding-right: 50px;
-//   padding-top: 30px;
+.blog {
 
+  .site-content {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5rem;
+      width: 80vw;
+      padding-top: 3.1rem;
+      a:link, a:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+  }
+
+  .read-more {
+      border: 1px solid black;
+      color: black;
+      background-color: transparent;
+      font-family: "Novecentos", sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.8rem 1.1rem;
+      font-size: 0.9rem;
+  }
+
+  .meta-data-journal {
+  height: 50px;
+  width: 500px;
+  background-color: $color_nav;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  color: $color_fonts;
+  text-decoration: none;
+
+  }
+
+.journal-headings  {
+  height: 50px;
+  width: 500px;
+  background-color: $color_nav;
+  position: absolute;
+  // top: 0;
+  // left: 0;
+    a{
+    color:white;
   
+    }
+  }
   
-  
 
-//   .journal-images img {
-//     width: 900px;
-//     height: 450px;
-   
-//   }
+  .journal-paragraph {
+  color: #404040;
+  font-family: 'Merriweather';
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
 
-
-// }
-
-// .journal-headings  {
-//   height: 50px;
-//   width: 500px;
-//   background-color: $color_nav;
-//   // position: absolute;
-//   // top: 0;
-//   // left: 0;
+}
 
 
+}
+
+//SINGLE.PHP - BLOG POST
+
+.single-page-blog-container {
+  img {
+    width: 1200px;
+    height: 500px;
+  }
+
+  h1{
+    height: 50px;
+    width: 500px;
+    background-color: $color_nav;
+    color:white;
+    text-transform: uppercase;
  
 
-//   a {
-//     text-transform: uppercase;
-//     font-family: 'Novecento Sans Web';
-//     color: $color_fonts;
-//     text-decoration: none;
+  }
+
+  .entry-meta {
+    height: 50px;
+    width: 500px;
+    background-color: $color_nav;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web';
+    color: $color_fonts;
+    text-decoration: none;
+    a{
+      color: $color_fonts;
+      &:hover {
+        color:$color_hover;
+      }
+    }
+    }
+
+    p {
+    color: #404040;
+    font-family: 'Merriweather';
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+    }
+
+    .single-page-social-media {
+      margin-left: 150px;
+      margin-bottom: 5rem;
+    }
+
+
+}
+
+.comments-area {
+
+  .comment-list {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  h2 {
+    font-size: 2.1rem;
+    color: #2f1339;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 150px;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 40px;
+  }
+
+  .comment-body {
+    display: flex;
+  }
+
+  .comment-meta {
+    display:flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+    cite {
+      color: #404040;
+      font-family: 'Merriweather';
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    time {
+      color: grey;
+      font-family: 'Merriweather';
     
+    }
+    a{
+      color: $color_nav;
+      text-decoration: none;
+    }
 
-//   }
+  }
 
-// }
+  .reply {
+    padding-bottom: 30px;
 
-// .meta-data-journal {
-//   height: 50px;
-//   width: 500px;
-//   background-color: $color_nav;
-//   text-transform: uppercase;
-//   font-family: 'Novecento Sans Web';
-//   color: $color_fonts;
-//   text-decoration: none;
+    a{
+      text-decoration: none;
+      color: $color_nav;
+      font-family: 'Merriweather';
 
+    }
+   
+  }
 
-// }
+  .comment-respond {
+    margin-left: 150px;
+    h3 {
+    font-size: 1.5rem;
+    color: $color__text-main;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+ 
 
-// .journal-paragraph {
-//   color: #404040;
-//   font-family: 'Merriweather';
-//   font-size: 16px;
-//   font-size: 1rem;
-//   line-height: 1.75;
+    }
 
-//   a {
-//     border: 1px solid #000;
-//     color: #000;
-//     text-decoration: none;
-//     font-family: 'Novecento Sans Web';
-//     text-transform: uppercase;
-//     padding: 10px 20px;
-//   }
-// }
+    .logged-in-as a {
 
+      color: #404040;
+      font-family: 'Merriweather';
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.75;
+      text-decoration: none;
+    
+    }
+
+    label {
+      text-transform: uppercase;
+ 
+      font-family: 'Novecento Sans Web';
+
+    }
+
+    textarea {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    }
+
+    input[type=submit] {
+      background-color: #248a83;
+      border: none;
+      border-radius: 0;
+      color: $color_fonts;
+      font-family: 'Novecento Sans Web';
+      text-transform: uppercase;
+      padding: .75rem 1.5rem;
+      text-decoration: none;
+    }
+
+  }
+}

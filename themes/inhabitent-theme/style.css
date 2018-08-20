@@ -1227,6 +1227,170 @@ object {
 .entry-summary p {
   font-family: 'Merriweather'; }
 
+.blog .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 80vw;
+  padding-top: 3.1rem; }
+  .blog .site-content a:link, .blog .site-content a:visited {
+    text-transform: uppercase;
+    text-decoration: none; }
+
+.blog .read-more {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+  font-family: "Novecentos", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 1.1rem;
+  font-size: 0.9rem; }
+
+.blog .meta-data-journal {
+  height: 50px;
+  width: 500px;
+  background-color: #248a83;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  color: #ffff;
+  text-decoration: none; }
+
+.blog .journal-headings {
+  height: 50px;
+  width: 500px;
+  background-color: #248a83;
+  position: absolute; }
+  .blog .journal-headings a {
+    color: white; }
+
+.blog .journal-paragraph {
+  color: #404040;
+  font-family: 'Merriweather';
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75; }
+
+.single-page-blog-container img {
+  width: 1200px;
+  height: 500px; }
+
+.single-page-blog-container h1 {
+  height: 50px;
+  width: 500px;
+  background-color: #248a83;
+  color: white;
+  text-transform: uppercase; }
+
+.single-page-blog-container .entry-meta {
+  height: 50px;
+  width: 500px;
+  background-color: #248a83;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web';
+  color: #ffff;
+  text-decoration: none; }
+  .single-page-blog-container .entry-meta a {
+    color: #ffff; }
+    .single-page-blog-container .entry-meta a:hover {
+      color: #f0e4d1; }
+
+.single-page-blog-container p {
+  color: #404040;
+  font-family: 'Merriweather';
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75; }
+
+.single-page-blog-container .single-page-social-media {
+  margin-left: 150px;
+  margin-bottom: 5rem; }
+
+.comments-area .comment-list {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e1e1e1; }
+
+.comments-area h2 {
+  font-size: 2.1rem;
+  color: #2f1339;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 150px; }
+
+.comments-area img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 40px; }
+
+.comments-area .comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.comments-area .comment-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px; }
+  .comments-area .comment-meta cite {
+    color: #404040;
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-style: normal; }
+  .comments-area .comment-meta time {
+    color: grey;
+    font-family: 'Merriweather'; }
+  .comments-area .comment-meta a {
+    color: #248a83;
+    text-decoration: none; }
+
+.comments-area .reply {
+  padding-bottom: 30px; }
+  .comments-area .reply a {
+    text-decoration: none;
+    color: #248a83;
+    font-family: 'Merriweather'; }
+
+.comments-area .comment-respond {
+  margin-left: 150px; }
+  .comments-area .comment-respond h3 {
+    font-size: 1.5rem;
+    color: #404040;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .comments-area .comment-respond .logged-in-as a {
+    color: #404040;
+    font-family: 'Merriweather';
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+    text-decoration: none; }
+  .comments-area .comment-respond label {
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web'; }
+  .comments-area .comment-respond textarea {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0; }
+  .comments-area .comment-respond input[type=submit] {
+    background-color: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #ffff;
+    font-family: 'Novecento Sans Web';
+    text-transform: uppercase;
+    padding: .75rem 1.5rem;
+    text-decoration: none; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1283,6 +1447,54 @@ object {
 .widget-title {
   text-transform: uppercase;
   letter-spacing: 3px; }
+
+.error404 a {
+  text-decoration: none; }
+
+.error404 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  padding-top: 3.1rem; }
+
+.error404 .page-title {
+  font-family: "Novecentos", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 2px; }
+
+.error404 .page-content p {
+  font-size: 1rem;
+  font-family: 'Merriweather'; }
+
+.error404 .widgettitle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Novecentos", sans-serif; }
+
+.error404 .widget ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  font-family: 'Merriweather'; }
+  .error404 .widget ul a {
+    color: #248A83;
+    text-transform: capitalize; }
+
+.error404 select {
+  font-family: 'Merriweather'; }
+
+.error404 .error-form fieldset {
+  width: 200px;
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0; }
+  .error404 .error-form fieldset i {
+    display: none; }
 
 .site-footer {
   background-image: url("../../assets/images/dark-wood.png");

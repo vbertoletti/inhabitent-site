@@ -1,0 +1,67 @@
+.error404 {
+
+  a {
+      text-decoration: none;
+  }
+  .site-content {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
+      padding-top: 3.1rem;
+  }
+
+
+  .page-title {
+      font-family: "Novecentos", sans-serif;
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+  }
+
+  .page-content p {
+      font-size: 1rem;
+      font-family: 'Merriweather';
+  }
+
+  .widgettitle{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Novecentos", sans-serif;
+  }
+
+
+
+  .widget ul {
+      list-style-type:none;
+      padding-left: 0;
+      margin-left: 0;
+      font-family: 'Merriweather';
+      a{
+          color: #248A83;
+          text-transform: capitalize;
+          
+
+      }
+  }
+
+  select {
+    font-family: 'Merriweather';
+
+  }
+
+  .error-form fieldset {
+    width: 200px;
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+
+    i {
+      display:none;
+    }
+
+  }
+
+
+}
