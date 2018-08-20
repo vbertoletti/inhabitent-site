@@ -1276,23 +1276,32 @@ object {
 
 .single-page-blog-container img {
   width: 1200px;
-  height: 500px; }
+  height: 500px;
+  position: relative; }
 
 .single-page-blog-container h1 {
-  height: 50px;
+  height: 100px;
   width: 500px;
   background-color: #248a83;
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-left: 10px;
+  position: absolute;
+  top: 20%; }
 
 .single-page-blog-container .entry-meta {
   height: 50px;
-  width: 500px;
+  width: 400px;
+  text-align: center;
+  padding-top: 10px;
   background-color: #248a83;
   text-transform: uppercase;
   font-family: 'Novecento Sans Web';
   color: #ffff;
-  text-decoration: none; }
+  text-decoration: none;
+  position: absolute;
+  top: 76.7%;
+  right: 35.3%; }
   .single-page-blog-container .entry-meta a {
     color: #ffff; }
     .single-page-blog-container .entry-meta a:hover {

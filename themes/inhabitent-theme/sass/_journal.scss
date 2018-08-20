@@ -67,26 +67,35 @@
   img {
     width: 1200px;
     height: 500px;
+    position: relative;
   }
 
   h1{
-    height: 50px;
+    height: 100px;
     width: 500px;
     background-color: $color_nav;
     color:white;
     text-transform: uppercase;
+    padding-left: 10px;
+    position: absolute;
+    top: 20%;
  
 
   }
 
   .entry-meta {
     height: 50px;
-    width: 500px;
+    width: 400px;
+    text-align: center;
+    padding-top: 10px;
     background-color: $color_nav;
     text-transform: uppercase;
     font-family: 'Novecento Sans Web';
     color: $color_fonts;
     text-decoration: none;
+    position: absolute;
+    top: 76.7%;
+    right: 35.3%;
     a{
       color: $color_fonts;
       &:hover {
