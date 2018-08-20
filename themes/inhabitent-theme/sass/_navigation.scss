@@ -97,7 +97,12 @@ display: block;
 			color: #404040;
 		}
 		
-  }
+	}
+	
+	.icon-search i {
+		color: $color_nav;
+		cursor: pointer;
+	}
  
 
 }
@@ -181,20 +186,10 @@ display: block;
 		border:0;
 	}
 	
-	// color: $color_hover;
-	
 	&.search-active {
 		width: 200px;
 	}
 		
-}
-
-
-
-.icon-search i {
-	color: $color_nav;
-	cursor: pointer;
-	// color: $color_fonts;
 }
 
 fieldset {
