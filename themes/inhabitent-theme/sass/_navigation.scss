@@ -53,61 +53,74 @@ display: block;
 
 /* Navigation */
 
-.site-header {
-	// z-index: 999;
-	background-color: rgba(255,255,255,0.8);
-	border-bottom: 1px solid #e1e1e1;
-	position: fixed;
-	top: 10px;
-	width: 100vw;
-	height: 70px;
-}
-
-.main-navigation {
-  display: flex;
+#site-navigation {
+	display: flex;
 	justify-content: space-around;
 	align-items: baseline;
-	
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding-top: 2.2rem;
+	padding-bottom: 0;
+		// border-bottom: 1px solid #e1e1e1;
+		// background-color: rgba(255,255,255,0.8);
 
-	.logo-container {
-		width: 50px;
-		
+	.green-logo-header {
+		display: none;
+		max-width: 3rem;
+		margin-left: 5rem;
 	}
+	
+	.white-logo-header {
+		max-width: 3rem;
+		margin-left: 5rem;
+	}
+
 
 	.menu {
 		display: flex;
 		list-style: none;
-		padding-left: 50rem;
+		padding-left: 40rem;
+		margin-bottom: 0;
 	}
 	
   .menu a {
 		text-decoration: none;
 		text-transform: uppercase;
 		padding-right: 10px;
-		color: $color_nav;
+		// color: $color_nav;
+		color: $color_fonts;
 		
   }
   .menu a:hover {
-    color: #404040;
+		// color: #404040;
+		color: $color_hover;
   }
 
- 
-
 }
+
+.site-header {
+	position: fixed;
+}
+
 
 .search-field {
 	display: none;
 	background: transparent;
 	border: 0;
 	width: 200px;
+	
+	// color: $color_hover;
 	// transition: width .60s ease-in-out;
+
 		
 }
 
 
 
 .icon-search i {
-	color: $color_nav;
+	// color: $color_nav;
+	color: $color_fonts;
 }
 
 fieldset {

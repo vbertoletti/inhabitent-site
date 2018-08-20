@@ -484,15 +484,7 @@ a {
   overflow: hidden; }
 
 /* Navigation */
-.site-header {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  top: 10px;
-  width: 100vw;
-  height: 70px; }
-
-.main-navigation {
+#site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,22 +492,36 @@ a {
       justify-content: space-around;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
-          align-items: baseline; }
-  .main-navigation .logo-container {
-    width: 50px; }
-  .main-navigation .menu {
+          align-items: baseline;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 2.2rem;
+  padding-bottom: 0; }
+  #site-navigation .green-logo-header {
+    display: none;
+    max-width: 3rem;
+    margin-left: 5rem; }
+  #site-navigation .white-logo-header {
+    max-width: 3rem;
+    margin-left: 5rem; }
+  #site-navigation .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     list-style: none;
-    padding-left: 50rem; }
-  .main-navigation .menu a {
+    padding-left: 40rem;
+    margin-bottom: 0; }
+  #site-navigation .menu a {
     text-decoration: none;
     text-transform: uppercase;
     padding-right: 10px;
-    color: #248a83; }
-  .main-navigation .menu a:hover {
-    color: #404040; }
+    color: #ffff; }
+  #site-navigation .menu a:hover {
+    color: #f0e4d1; }
+
+.site-header {
+  position: fixed; }
 
 .search-field {
   display: none;
@@ -524,7 +530,7 @@ a {
   width: 200px; }
 
 .icon-search i {
-  color: #248a83; }
+  color: #ffff; }
 
 fieldset {
   border: 0; }
@@ -1027,6 +1033,45 @@ object {
 
 .wpcf7-form span {
   color: #d99054; }
+
+#site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 2.2rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: rgba(255, 255, 255, 0.8); }
+  #site-navigation .green-logo-header {
+    display: block;
+    max-width: 3rem;
+    margin-left: 5rem; }
+  #site-navigation .white-logo-header {
+    display: none;
+    max-width: 3rem;
+    margin-left: 5rem; }
+  #site-navigation .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding-left: 40rem;
+    margin-bottom: 0; }
+  #site-navigation .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 10px;
+    color: #248a83; }
+  #site-navigation .menu a:hover {
+    color: #404040; }
 
 .shop-header {
   width: 100vw;
