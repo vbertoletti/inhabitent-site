@@ -1318,6 +1318,10 @@ object {
 .search-results #post-83 {
   display: none; }
 
+.search-results #post-45 {
+  margin-left: 10rem;
+  margin-top: 3rem; }
+
 .entry-summary p {
   font-family: 'Merriweather'; }
 
@@ -1356,7 +1360,7 @@ object {
     padding-left: 10px; }
   .blog .journal-images img {
     width: 1400px;
-    height: 500px; }
+    height: auto; }
 
 .blog .read-more {
   border: 1px solid black;
@@ -1572,7 +1576,7 @@ object {
     font-size: 2.5rem; }
   .archive-site-main img {
     width: 1400px;
-    height: 500px;
+    height: auto;
     position: relative; }
   .archive-site-main h2 {
     height: 100px;
@@ -1613,17 +1617,17 @@ object {
     padding: 0.8rem 1.1rem;
     font-size: 0.9rem; }
 
-.date article {
+.date .entry-header {
   position: relative; }
-  .date article .entry-header h2 {
+  .date .entry-header h2 {
     position: absolute;
     margin-top: 4rem;
     top: 0;
     font-size: 2rem; }
-  .date article .entry-meta {
+  .date .entry-header .entry-meta {
     position: absolute;
-    bottom: 11.7rem;
-    right: 3.1rem; }
+    bottom: 0.4rem;
+    right: 0; }
 
 .site-content {
   display: -webkit-box;
@@ -1765,6 +1769,11 @@ object {
   .company-info .footer-logo {
     width: 17rem;
     padding-top: 20px; }
+  .company-info .site-info p a i:hover {
+    text-decoration: underline; }
+  .company-info .site-info p:hover {
+    text-decoration: underline;
+    cursor: pointer; }
 
 .copyright {
   text-transform: uppercase;
