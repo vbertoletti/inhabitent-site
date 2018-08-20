@@ -15,11 +15,44 @@
       }
   }
 
-  .journal-images img {
-    width: 1400px;
-    height: 500px;
-  }
+  .journal-images {
+    position: relative;
 
+    .journal-headings {
+      position: absolute;
+      padding-left: 10px;
+      top: 10%;
+      left: 0;
+      height: 100px;
+      width: 500px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 2rem;
+      background-color: $color_nav;
+    
+        a{
+        color:white;
+      
+        }
+
+
+    }
+
+    .meta-data-journal {
+      position: absolute;
+      bottom: 1%;
+      right: 0;
+      padding-left: 10px;
+
+    }
+
+    img {
+      width: 1400px;
+      height: 500px;
+    }
+
+  }
+  
   .read-more {
       border: 1px solid black;
       color: black;
@@ -41,21 +74,7 @@
   text-decoration: none;
 
   }
-
-.journal-headings  {
-  height: 50px;
-  width: 500px;
-  background-color: $color_nav;
-  position: absolute;
-  // top: 0;
-  // left: 0;
-    a{
-    color:white;
   
-    }
-  }
-  
-
   .journal-paragraph {
   color: #404040;
   font-family: 'Merriweather';
@@ -87,6 +106,7 @@
     padding-left: 10px;
     position: absolute;
     top: 20%;
+
  
 
   }
@@ -125,10 +145,84 @@
       margin-bottom: 5rem;
     }
 
+    .cat-links {
+      text-transform: uppercase;
+      color: $color__text-main;
+      a{
+        text-decoration: none;
+        color: $color_nav;
+        &:hover {
+          color: $color__text-main;
+
+        }
+      }
+    }
+
+    .tags-links {
+      padding-left: 20px;
+      text-transform: uppercase;
+      color: $color__text-main;
+      a{
+        text-decoration: none;
+        color: $color_nav;
+        &:hover {
+          color: $color__text-main;
+        }
+      }
+    }
+
+
+}
+
+.comment-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  .comment-form-comment {
+    width: 90%;
+
+  }
+
+  .comment-form-author {
+    width: 50%;
+
+    label {
+      padding-right: 10px;
+    }
+
+    span {
+      color: $color_footer;
+    }
+  }
+
+  .comment-form-email {
+    width: 50%;
+
+    label {
+      padding-right: 10px;
+    }
+    span {
+      color: $color_footer;
+    }
+  }
+
+  .comment-form-url {
+    width: 90%;
+
+    label {
+      padding-right: 10px;
+    }
+
+    input {
+      width: 90%;
+    }
+  }
 
 }
 
 .comments-area {
+
+  
 
   .comment-list {
     padding-bottom: 2rem;
@@ -191,6 +285,7 @@
 
   .comment-respond {
     margin-left: 150px;
+
     h3 {
     font-size: 1.5rem;
     color: $color__text-main;
@@ -212,12 +307,14 @@
 
     label {
       text-transform: uppercase;
- 
       font-family: 'Novecento Sans Web';
 
     }
 
-    textarea {
+    textarea, 
+    #author,
+    #url,
+    #email {
     color: #666;
     background-color: #f4f4f4;
     border: 1px solid #e1e1e1;

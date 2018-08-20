@@ -1,19 +1,20 @@
 jQuery(document).ready(function($) {
 
-  $('.search-section-nav .search-submit').on('click', function(event) {
+  $('.search-section-nav').on('click', function(event) {
 
     // The default action that belongs to the event will not occur. Clicking on the submit button, prevents it from re-directing to the search page.
     event.preventDefault();
 
     //Toggles the serach input field
-    $('.search-section-nav .search-field').toggle();
+    $('.search-section-nav .search-field').toggleClass('search-active');
+    // you can also try toggleClass or addClass and removeClass
 
     //when clicking the icon, focus will be on the input field isntead of icon
     $('.search-section-nav .search-field').focus();
 
     //when it loses focus by clicking somewhere else, hides the input field
     $('.search-section-nav .search-field').on('blur', function(){
-        $('.search-section-nav .search-field').hide();
+        $('.search-section-nav .search-field').toggleClass('search-active');
     });
 
     //submits seach once enter key is pressed - answer from stackoverflow, link: https://stackoverflow.com/questions/979662/how-to-detect-pressing-enter-on-keyboard-using-jquery

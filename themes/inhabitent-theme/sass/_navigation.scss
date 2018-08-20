@@ -72,6 +72,7 @@ display: block;
 	}
 	
 	.white-logo-header {
+		display: none;
 		max-width: 3rem;
 		margin-left: 5rem;
 	}
@@ -99,37 +100,54 @@ display: block;
 
 }
 
+
+// homepage
+.home, 
+.page-template-about {
+// try using the dark nav background
+#site-navigation .green-logo-header {
+	display: block;
+	// max-width: 3rem;
+	// margin-left: 5rem;
+}
+}
+
+
+
 .site-header {
 	position: fixed;
 }
 
 
-.search-field {
-	display: none;
+.site-header .search-field {
+	// display: none;
+	width: 0;
 	background: transparent;
 	border: 0;
-	width: 200px;
+	transition: .6s;
+
+	input:focus {
+		border:0;
+	}
 	
 	// color: $color_hover;
-	// transition: width .60s ease-in-out;
-
+	
+	&.search-active {
+		width: 200px;
+	}
 		
 }
 
 
 
 .icon-search i {
-	// color: $color_nav;
-	color: $color_fonts;
+	color: $color_nav;
+	cursor: pointer;
+	// color: $color_fonts;
 }
 
 fieldset {
 	border: 0;
-
-	.search-submit {
-		border: none;
-		padding: 0;
-	}
 }
 
 

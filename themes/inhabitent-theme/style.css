@@ -503,6 +503,7 @@ a {
     max-width: 3rem;
     margin-left: 5rem; }
   #site-navigation .white-logo-header {
+    display: none;
     max-width: 3rem;
     margin-left: 5rem; }
   #site-navigation .menu {
@@ -520,23 +521,30 @@ a {
   #site-navigation .menu a:hover {
     color: #f0e4d1; }
 
+.home #site-navigation .green-logo-header,
+.page-template-about #site-navigation .green-logo-header {
+  display: block; }
+
 .site-header {
   position: fixed; }
 
-.search-field {
-  display: none;
+.site-header .search-field {
+  width: 0;
   background: transparent;
   border: 0;
-  width: 200px; }
+  -webkit-transition: .6s;
+  transition: .6s; }
+  .site-header .search-field input:focus {
+    border: 0; }
+  .site-header .search-field.search-active {
+    width: 200px; }
 
 .icon-search i {
-  color: #ffff; }
+  color: #248a83;
+  cursor: pointer; }
 
 fieldset {
   border: 0; }
-  fieldset .search-submit {
-    border: none;
-    padding: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1050,14 +1058,6 @@ object {
   padding-bottom: 0;
   border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.8); }
-  #site-navigation .green-logo-header {
-    display: block;
-    max-width: 3rem;
-    margin-left: 5rem; }
-  #site-navigation .white-logo-header {
-    display: none;
-    max-width: 3rem;
-    margin-left: 5rem; }
   #site-navigation .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1285,9 +1285,29 @@ object {
     text-transform: uppercase;
     text-decoration: none; }
 
-.blog .journal-images img {
-  width: 1400px;
-  height: 500px; }
+.blog .journal-images {
+  position: relative; }
+  .blog .journal-images .journal-headings {
+    position: absolute;
+    padding-left: 10px;
+    top: 10%;
+    left: 0;
+    height: 100px;
+    width: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 2rem;
+    background-color: #248a83; }
+    .blog .journal-images .journal-headings a {
+      color: white; }
+  .blog .journal-images .meta-data-journal {
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+    padding-left: 10px; }
+  .blog .journal-images img {
+    width: 1400px;
+    height: 500px; }
 
 .blog .read-more {
   border: 1px solid black;
@@ -1307,14 +1327,6 @@ object {
   font-family: 'Novecento Sans Web';
   color: #ffff;
   text-decoration: none; }
-
-.blog .journal-headings {
-  height: 50px;
-  width: 500px;
-  background-color: #248a83;
-  position: absolute; }
-  .blog .journal-headings a {
-    color: white; }
 
 .blog .journal-paragraph {
   color: #404040;
@@ -1366,6 +1378,52 @@ object {
 .single-page-blog-container .single-page-social-media {
   margin-left: 150px;
   margin-bottom: 5rem; }
+
+.single-page-blog-container .cat-links {
+  text-transform: uppercase;
+  color: #404040; }
+  .single-page-blog-container .cat-links a {
+    text-decoration: none;
+    color: #248a83; }
+    .single-page-blog-container .cat-links a:hover {
+      color: #404040; }
+
+.single-page-blog-container .tags-links {
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: #404040; }
+  .single-page-blog-container .tags-links a {
+    text-decoration: none;
+    color: #248a83; }
+    .single-page-blog-container .tags-links a:hover {
+      color: #404040; }
+
+.comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .comment-form .comment-form-comment {
+    width: 90%; }
+  .comment-form .comment-form-author {
+    width: 50%; }
+    .comment-form .comment-form-author label {
+      padding-right: 10px; }
+    .comment-form .comment-form-author span {
+      color: #d99054; }
+  .comment-form .comment-form-email {
+    width: 50%; }
+    .comment-form .comment-form-email label {
+      padding-right: 10px; }
+    .comment-form .comment-form-email span {
+      color: #d99054; }
+  .comment-form .comment-form-url {
+    width: 90%; }
+    .comment-form .comment-form-url label {
+      padding-right: 10px; }
+    .comment-form .comment-form-url input {
+      width: 90%; }
 
 .comments-area .comment-list {
   padding-bottom: 2rem;
@@ -1433,7 +1491,10 @@ object {
   .comments-area .comment-respond label {
     text-transform: uppercase;
     font-family: 'Novecento Sans Web'; }
-  .comments-area .comment-respond textarea {
+  .comments-area .comment-respond textarea,
+  .comments-area .comment-respond #author,
+  .comments-area .comment-respond #url,
+  .comments-area .comment-respond #email {
     color: #666;
     background-color: #f4f4f4;
     border: 1px solid #e1e1e1;

@@ -23,10 +23,6 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-
-
-
-
 			
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="journal-images">
@@ -51,13 +47,6 @@ get_header(); ?>
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-content -->
 		</article><!-- #post-## -->
-
-
-
-
-
-
-
 
 
 			<?php endwhile; ?>
