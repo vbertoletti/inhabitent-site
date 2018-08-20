@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
     event.preventDefault();
 
     //Toggles the serach input field
-    $('.search-section-nav .search-field').toggleClass('search-active');
+    $('.search-section-nav .search-field').addClass('search-active');
     // you can also try toggleClass or addClass and removeClass
 
     //when clicking the icon, focus will be on the input field isntead of icon

@@ -51,30 +51,32 @@ display: block;
 
  }
 
-/* Navigation */
+//  GREEN NAVIGATION 
 
-#site-navigation {
+.archive .main-navigation, 
+.single .main-navigation,
+.blog .main-navigation,
+.search .main-navigation,
+.page-id-62 .main-navigation  {
 	display: flex;
 	justify-content: space-around;
-	align-items: baseline;
+	align-items: center;
+	margin-top: 2rem;
+
 	position: fixed;
 	width: 100%;
 	top: 0;
-	padding-top: 2.2rem;
 	padding-bottom: 0;
-		// border-bottom: 1px solid #e1e1e1;
-		// background-color: rgba(255,255,255,0.8);
+	border-bottom: 1px solid #e1e1e1;
+	background-color: rgba(255,255,255,0.8);
 
 	.green-logo-header {
-		display: none;
 		max-width: 3rem;
 		margin-left: 5rem;
 	}
 	
 	.white-logo-header {
 		display: none;
-		max-width: 3rem;
-		margin-left: 5rem;
 	}
 
 
@@ -89,27 +91,77 @@ display: block;
 		text-decoration: none;
 		text-transform: uppercase;
 		padding-right: 10px;
-		// color: $color_nav;
-		color: $color_fonts;
+		color: $color_nav;
+
+		&:hover {
+			color: #404040;
+		}
 		
   }
-  .menu a:hover {
-		// color: #404040;
+ 
+
+}
+
+
+// WHITE NAVIGATION
+
+.home .main-navigation, 
+.page-template-about .main-navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 2rem;
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding-bottom: 0;
+
+	.white-logo-header {
+		max-width: 3rem;
+		margin-left: 5rem;
+
+	}
+
+	.green-logo-header {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+		list-style: none;
+		margin-left: 35rem;
+		margin-bottom: 0;
+	}
+	
+  .menu a {
+		text-decoration: none;
+		text-transform: uppercase;
+		padding-right: 10px;
+		color: $color_fonts;
+
+		&:hover {
+			color: $color_hover;
+		}
+		
+	}
+	
+	.icon-search i {
+		cursor: pointer;
+		color: $color_fonts;
+
+
+	}
+	
+	label .search-field::placeholder {
 		color: $color_hover;
-  }
+		
+	}
+	
+	.search-field {
+		outline: none;
+	}
 
-}
-
-
-// homepage
-.home, 
-.page-template-about {
-// try using the dark nav background
-#site-navigation .green-logo-header {
-	display: block;
-	// max-width: 3rem;
-	// margin-left: 5rem;
-}
 }
 
 
@@ -120,7 +172,6 @@ display: block;
 
 
 .site-header .search-field {
-	// display: none;
 	width: 0;
 	background: transparent;
 	border: 0;
