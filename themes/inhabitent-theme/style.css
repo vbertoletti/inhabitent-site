@@ -1234,11 +1234,15 @@ object {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
-  width: 80vw;
+  width: 100vw;
   padding-top: 3.1rem; }
   .blog .site-content a:link, .blog .site-content a:visited {
     text-transform: uppercase;
     text-decoration: none; }
+
+.blog .journal-images img {
+  width: 1400px;
+  height: 500px; }
 
 .blog .read-more {
   border: 1px solid black;
@@ -1378,7 +1382,6 @@ object {
   .comments-area .comment-respond .logged-in-as a {
     color: #404040;
     font-family: 'Merriweather';
-    font-size: 16px;
     font-size: 1rem;
     line-height: 1.75;
     text-decoration: none; }
@@ -1399,6 +1402,61 @@ object {
     text-transform: uppercase;
     padding: .75rem 1.5rem;
     text-decoration: none; }
+
+.archive-site-main {
+  margin-bottom: 5rem; }
+  .archive-site-main .archive-page-title {
+    color: #404040;
+    font-family: 'Novecento Sans Web';
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-left: 9rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+    letter-spacing: 2px;
+    font-size: 2.5rem; }
+  .archive-site-main img {
+    width: 1400px;
+    height: 500px;
+    position: relative; }
+  .archive-site-main h2 {
+    height: 100px;
+    width: 500px;
+    background-color: #248a83;
+    text-transform: uppercase;
+    padding-left: 10px; }
+    .archive-site-main h2 a {
+      text-decoration: none;
+      color: white; }
+  .archive-site-main .entry-meta {
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #248a83;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web';
+    color: #ffff;
+    text-decoration: none; }
+    .archive-site-main .entry-meta a {
+      color: #ffff; }
+      .archive-site-main .entry-meta a:hover {
+        color: #f0e4d1; }
+  .archive-site-main p {
+    color: #404040;
+    font-family: 'Merriweather';
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75; }
+  .archive-site-main .entry-content a {
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    font-family: "Novecentos", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8rem 1.1rem;
+    font-size: 0.9rem; }
 
 .site-content {
   display: -webkit-box;
