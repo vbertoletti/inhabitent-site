@@ -1661,11 +1661,16 @@ object {
   font-family: 'Merriweather'; }
 
 .error404 .error-form fieldset {
-  width: 200px;
   color: #666;
-  background-color: #f4f4f4;
-  border: 1px solid #e1e1e1;
+  background-color: transparent;
   border-radius: 0; }
+  .error404 .error-form fieldset .search-field {
+    width: 200px;
+    color: #666;
+    background-color: #f4f4f4;
+    border-radius: 0;
+    border: 1px solid #e1e1e1;
+    padding-left: 10px; }
   .error404 .error-form fieldset i {
     display: none; }
 
