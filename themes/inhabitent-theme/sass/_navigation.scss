@@ -49,11 +49,14 @@ display: block;
 		overflow: hidden;
 	}
 
- }
+}
 
- .logged-out .main-navigation {
-	margin-top: 0;
- }
+.logged-in {
+	.main-navigation {
+		margin-top: 2rem;
+	}
+
+}
 
 //  GREEN NAVIGATION 
 
@@ -67,7 +70,6 @@ display: block;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 2rem;
 	width: 100%;
 	top: 0;
 	position: fixed;
@@ -120,7 +122,6 @@ display: block;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 2rem;
 	width: 100%;
 	top: 0;
 	padding-bottom: 0;

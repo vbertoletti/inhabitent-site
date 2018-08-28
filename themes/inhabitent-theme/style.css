@@ -483,8 +483,8 @@ a {
   margin: 0 0 1.5rem;
   overflow: hidden; }
 
-.logged-out .main-navigation {
-  margin-top: 0; }
+.logged-in .main-navigation {
+  margin-top: 2rem; }
 
 .archive .main-navigation,
 .single .main-navigation,
@@ -501,7 +501,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2rem;
   width: 100%;
   top: 0;
   position: fixed;
@@ -577,7 +576,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2rem;
   width: 100%;
   top: 0;
   padding-bottom: 0;
