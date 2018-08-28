@@ -98,7 +98,7 @@ function inhabitent_scripts()
 
     // adding jquery dependency to js 
   
-    wp_enqueue_script('script', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), true);
+    wp_enqueue_script('script', get_template_directory_uri() . '/build/js/scripts.min.js', array( 'jquery' ), true);
    
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {

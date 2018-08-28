@@ -51,6 +51,10 @@ display: block;
 
  }
 
+ .logged-out .main-navigation {
+	margin-top: 0;
+ }
+
 //  GREEN NAVIGATION 
 
 .archive .main-navigation, 
@@ -63,10 +67,9 @@ display: block;
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 2rem;
-
-	// position: fixed;
 	width: 100%;
 	top: 0;
+	position: fixed;
 	padding-bottom: 0;
 	border-bottom: 1px solid #e1e1e1;
 	background-color: rgba(255,255,255,0.8);
@@ -117,11 +120,10 @@ display: block;
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 2rem;
-
-	position: fixed;
 	width: 100%;
 	top: 0;
 	padding-bottom: 0;
+	position: fixed;
 
 	.white-logo-header {
 		max-width: 3rem;
