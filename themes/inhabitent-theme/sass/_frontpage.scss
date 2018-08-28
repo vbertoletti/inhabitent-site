@@ -1,7 +1,5 @@
 // hero banner/header
 
-
-
 .hero-banner {
   background-image: linear-gradient(
       180deg,
@@ -10,43 +8,34 @@
     ),
     url('../../assets/images/home-hero.jpg');
   background-size: cover, cover;
-  width: 100%;
   height: 100vh;
 
   .main-logo-container {
     position: relative;
-    text-align: center;
+    width: 300px;
+    margin: 0 auto;
     top: 25vh;
+    
   }
 }
-
 
 
 // shop stuff section begins
 
 
-
 .home-shop-stuff {
   width: 100%;
-  margin: 3rem;
+  margin: 5rem auto;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
 
   h2 {
     font-family: 'Novecento Sans Web';
     font-weight: normal;
-    font-style: normal;
+    color: #2f1339;
   }
-}
-
-.home-terms-container:hover {
-  border-color: $color_footer;
-}
-
-.home-terms-container a:hover {
-  background: #19625d;
 }
 
 .home-shop-stuff-wrapper {
@@ -66,32 +55,48 @@
   padding: 20px;
   margin-left: 20px;
 
+  &:hover {
+    border-color: $color_footer;
+  }
+
   img {
     width: 60px;
   }
 
-  a {
+  .shop-stuff-link-container {
     background-color: $color_nav;
-    color: $color_fonts;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.9rem;
-    cursor: pointer;
-    font-family: Novecento Sans Web, sans-serif;
     height: 40px;
     width: 120px;
-    padding-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 8px;
+
+    &:hover {
+    border-color: $color_footer;
+    background: #19625d;
+    }
+
+    a {
+      color: $color_fonts; 
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 0.9rem;
+
+    }
   }
 
   p {
-    font-family: Merriweather Web, serif;
-    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
     line-height: 1.75;
     color: $color__text-main;
     text-align: center;
+    height: 100px;
   }
 }
+
 
 
 // blog section begins
@@ -116,7 +121,7 @@
   .meta-data-journal {
     margin-left: 10px;
     font-size: 0.85rem;
-    font-family: Merriweather Web, serif;
+    font-family: 'Merriweather', serif;
     padding-top: 10px;
   }
 
@@ -167,34 +172,9 @@
 }
 
 
-// latest adventures section
 
+// latest adventures section styles 
 
-.latest-adventures {
-  h2 {
-    font-family: 'Novecento Sans Web';
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
-    letter-spacing: 2px;
-    padding-bottom: 20px;
-  }
-
-  h3 {
-    font-family: 'Merriweather';  
-    font-weight: 300;
-    color: $color_fonts;
-    letter-spacing: 2px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    &:hover {
-      color: $color_hover;
-      cursor: pointer;
-    }
-  }
-}
 
 .canoe-girl-heading {
   font-size: 3rem;
@@ -212,6 +192,20 @@
   padding-right: 100px;
   padding-left: 100px;
   margin-bottom: 50px;
+
+  h3 {
+    font-family: 'Merriweather';  
+    font-weight: 300;
+    color: $color_fonts;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    &:hover {
+    color: $color_hover;
+    cursor: pointer;
+    }
+  }
 }
 
 .one {

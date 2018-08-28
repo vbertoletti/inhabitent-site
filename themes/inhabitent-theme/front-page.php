@@ -1,14 +1,19 @@
 <?php get_header();?>
 
-<section> <!-- front-page section -->
+<main> <!-- main front-page -->
 
-	<div class="hero-banner">
+	<!-- HEADER/HERO BANNER SECTION BEGINS -->
+
+	<header class="hero-banner">
 
 		<div class="main-logo-container">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-full.svg">
 		</div>
 
-	</div> <!-- end of .hero-banner -->
+	</header> <!-- end of .hero-banner section -->
+
+
+	<!-- FRONT PAGE SHOP STUFF BEGINS -->
 
 	<div class="home-shop-stuff">
 		<h2> shop stuff </h2>
@@ -20,51 +25,55 @@
 		));
 	?>
 
-		<section class="home-shop-stuff-wrapper">
-			<?php foreach ($terms as $term): ?>
-			<div class="home-terms-container">
+	<section class="home-shop-stuff-wrapper">
 
-			<img src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $term->name ?>.svg">
+		<?php foreach ($terms as $term): ?>
 
+		<div class="home-terms-container">
 
-			<p><?php echo $term->description; ?></p>
+				<img src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $term->name ?>.svg">
 
-				<a href="<?php echo get_term_link($term); ?>">
-				<?php echo $term->name . " stuff"; ?>
-				</a>
+				<p><?php echo $term->description; ?></p>
 
-			</div> <!-- end of .home-terms-container -->
+				<div class="shop-stuff-link-container">
+						<a href="<?php echo get_term_link($term); ?>">
+						<?php echo $term->name . " stuff"; ?>
+						</a>
+				</div>
 
-			<!-- <?php print_r($term)?> shows what my options are-->
+		</div> <!-- end of .home-terms-container -->
 
-			<?php endforeach;?>
-		</section>
+		<!-- <?php print_r($term)?> shows what my 'terms' options are, this is not in use, just an example for future projects -->
 
-
-		<div class="home-shop-stuff">
-			<h2> inhabitent journal </h2>
-		</div>
+		<?php endforeach;?>
+	</section> 	<!-- end of .home-shop-stuff-wrapper section -->
 
 
-		<?php
-			$args = array(
-    		'post_type' => 'post',
-    		'order' => 'DSC',
-    		'numberposts' => 3,
-			);
-			$product_posts = get_posts($args); // returns an array of posts
-		?>
+	<!-- FRONT PAGE INHABITENT JOURNAL BEGINS -->
 
+	<div class="home-shop-stuff">
+		<!-- re-using shop stuff headings class -->
+		<h2> inhabitent journal </h2>
+	</div>
+
+	<?php
+		$args = array(
+    	'post_type' => 'post',
+    	'order' => 'DSC',
+    	'numberposts' => 3,
+		);
+		$product_posts = get_posts($args); // returns an array of posts
+	?>
 
 	<section class="main-blog-wrapper">
-			<?php foreach ($product_posts as $post): setup_postdata($post);?>
+		<?php foreach ($product_posts as $post): setup_postdata($post);?>
+
 		<div class="home-blog-posts-wrapper">
 
-
 			<?php	the_post_thumbnail();?>
-	
+
 			<span class="meta-data-journal">
-			<?php inhabitent_posted_on();?> / <?php comments_number('0 Comments', '1 Comment', '% Comments');?>
+				<?php inhabitent_posted_on();?> / <?php comments_number('0 Comments', '1 Comment', '% Comments');?>
 			</span>
 
 			<h3 class="journal-content">
@@ -72,55 +81,55 @@
 			</h3>
 			
 			<span class="read-entry">
-			<a href="<?php the_permalink();?>">Read Entry</a>
+				<a href="<?php the_permalink();?>">Read Entry</a>
 			</span>
 
-			</div>
+		</div>
 		<?php endforeach;
+
 		wp_reset_postdata();?>
-		</section>
+	</section> <!-- End of .main-blog-wrapper  -->
+	
 
+	
+	<!-- FRONT PAGE LATEST ADVENTURES BEGINS -->
 
-	<section class="latest-adventures">
-
-	<h2>Latest Adventures</h2>
+	<div class="home-shop-stuff"> 
+		<!-- re-using shop stuff headings class -->
+		<h2>Latest Adventures</h2>
+	</div>
 
 	<section class="journal-main-box">
   
-	<div class="canoe-girl">
-	<div class="one">
-	<h3 class="canoe-girl-heading">Getting Back to Nature in a Canoe</h3>
-	<span class="adventures-readentry">read more</span>
-	</div>
-	<span class="more-adventures-button">More Adventures</span> 
-	</div>
+		<div class="canoe-girl">
+			<div class="one">
+				<h3 class="canoe-girl-heading">Getting Back to Nature in a Canoe</h3>
+				<span class="adventures-readentry">read more</span>
+			</div>
+				<span class="more-adventures-button">More Adventures</span> 
+		</div>
 
+		<div class="friends-beach">
 
-	<div class="friends-beach">
-	<div class="two">
-	<h3 class="friends-beach-heading">A Night with Friends at the Beach</h3>
-	<span class="adventures-readentry">read more</span>
-	</div>
+			<div class="two">
+				<h3 class="friends-beach-heading">A Night with Friends at the Beach</h3>
+				<span class="adventures-readentry">read more</span>
+			</div>
 
+			<div class="big-mountain">
+				<h3 class="mountain-and-night">Taking in the View at Big Mountain</h3>
+				<span class="adventures-readentry">read more</span>
+			</div>
 
-	<div class="big-mountain">
-	<h3 class="mountain-and-night">Taking in the View at Big Mountain</h3>
-	<span class="adventures-readentry">read more</span>
-	</div>
-
-
-	<div class="night-sky">
-	<h3 class="mountain-and-night">Star-Gazing at the Night Sky</h3>
-	<span class="adventures-readentry">read more</span>
-	</div>
+			<div class="night-sky">
+				<h3 class="mountain-and-night">Star-Gazing at the Night Sky</h3>
+				<span class="adventures-readentry">read more</span>
+			</div>
 	
-	</div>
+		</div>
 	
-	</section>
-
+	</section> <!-- end of .journal-main-box -->
 	
 
-</section>
-
-
+</main> <!-- end of main front-page -->
 <?php get_footer();?>

@@ -498,7 +498,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2rem;
-  position: fixed;
   width: 100%;
   top: 0;
   padding-bottom: 0;
@@ -805,30 +804,24 @@ object {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../assets/images/home-hero.jpg");
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/home-hero.jpg");
   background-size: cover, cover;
-  width: 100%;
   height: 100vh; }
   .hero-banner .main-logo-container {
     position: relative;
-    text-align: center;
+    width: 300px;
+    margin: 0 auto;
     top: 25vh; }
 
 .home-shop-stuff {
   width: 100%;
-  margin: 3rem;
+  margin: 5rem auto;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   letter-spacing: 2px; }
   .home-shop-stuff h2 {
     font-family: 'Novecento Sans Web';
     font-weight: normal;
-    font-style: normal; }
-
-.home-terms-container:hover {
-  border-color: #d99054; }
-
-.home-terms-container a:hover {
-  background: #19625d; }
+    color: #2f1339; }
 
 .home-shop-stuff-wrapper {
   display: -webkit-box;
@@ -856,26 +849,34 @@ object {
   border-top-width: 5px;
   padding: 20px;
   margin-left: 20px; }
+  .home-terms-container:hover {
+    border-color: #d99054; }
   .home-terms-container img {
     width: 60px; }
-  .home-terms-container a {
+  .home-terms-container .shop-stuff-link-container {
     background-color: #248a83;
-    color: #ffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.9rem;
-    cursor: pointer;
-    font-family: Novecento Sans Web, sans-serif;
     height: 40px;
     width: 120px;
-    padding-top: 10px; }
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 8px; }
+    .home-terms-container .shop-stuff-link-container:hover {
+      border-color: #d99054;
+      background: #19625d; }
+    .home-terms-container .shop-stuff-link-container a {
+      color: #ffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 0.9rem; }
   .home-terms-container p {
-    font-family: Merriweather Web, serif;
-    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
     line-height: 1.75;
     color: #404040;
-    text-align: center; }
+    text-align: center;
+    height: 100px; }
 
 .main-blog-wrapper {
   display: -webkit-box;
@@ -906,7 +907,7 @@ object {
   .home-blog-posts-wrapper .meta-data-journal {
     margin-left: 10px;
     font-size: 0.85rem;
-    font-family: Merriweather Web, serif;
+    font-family: 'Merriweather', serif;
     padding-top: 10px; }
   .home-blog-posts-wrapper .journal-content {
     text-transform: uppercase;
@@ -941,26 +942,6 @@ object {
   .read-entry:hover a {
     color: #ffff; }
 
-.latest-adventures h2 {
-  font-family: 'Novecento Sans Web';
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 2rem;
-  text-align: center;
-  letter-spacing: 2px;
-  padding-bottom: 20px; }
-
-.latest-adventures h3 {
-  font-family: 'Merriweather';
-  font-weight: 300;
-  color: #ffff;
-  letter-spacing: 2px;
-  padding-left: 20px;
-  padding-right: 20px; }
-  .latest-adventures h3:hover {
-    color: #f0e4d1;
-    cursor: pointer; }
-
 .canoe-girl-heading {
   font-size: 3rem; }
 
@@ -978,6 +959,16 @@ object {
   padding-right: 100px;
   padding-left: 100px;
   margin-bottom: 50px; }
+  .journal-main-box h3 {
+    font-family: 'Merriweather';
+    font-weight: 300;
+    color: #ffff;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .journal-main-box h3:hover {
+      color: #f0e4d1;
+      cursor: pointer; }
 
 .one {
   height: 520px;
