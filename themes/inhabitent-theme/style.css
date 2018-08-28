@@ -1767,16 +1767,21 @@ object {
   .company-info .footer-logo {
     width: 17rem;
     padding-top: 20px; }
-  .company-info .site-info p a i:hover {
-    text-decoration: underline; }
-  .company-info .site-info p:hover {
-    text-decoration: underline;
-    cursor: pointer; }
+  .company-info .site-info p {
+    font-family: 'Merriweather';
+    font-size: 1rem; }
+    .company-info .site-info p a {
+      text-decoration: none; }
+      .company-info .site-info p a:hover {
+        text-decoration: underline; }
+    .company-info .site-info p:hover {
+      text-decoration: underline;
+      cursor: pointer; }
 
 .copyright {
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Novecento Sans Web';
+  font-family: 'Novecento Sans Web', sans-serif;
   font-size: 1rem;
   color: #ffff; }
 
@@ -1789,3 +1794,6 @@ object {
 
 .business-hours {
   padding-right: 300px; }
+  .business-hours p {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem; }

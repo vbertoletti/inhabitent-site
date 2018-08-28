@@ -36,12 +36,16 @@
 
 }
 
-.site-info p{
+  .site-info p {
+    font-family: 'Merriweather';
+    font-size: 1rem;
 
-  a i:hover {
-    text-decoration: underline;
-  }
-
+    a {
+     text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   &:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -54,7 +58,7 @@
 .copyright {
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Novecento Sans Web';
+  font-family: 'Novecento Sans Web', sans-serif;
   font-size: 1rem;
   color: $color_fonts;
 }
@@ -70,5 +74,10 @@
 
 .business-hours {
   padding-right: 300px;
+
+  p {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+  }
 }
 
