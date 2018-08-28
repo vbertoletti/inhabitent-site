@@ -62,7 +62,8 @@ display: block;
 .blog .main-navigation,
 .search .main-navigation,
 .page-id-62 .main-navigation,
-.error404 .main-navigation   {
+.error404 .main-navigation,
+.scrolled.main-navigation {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -150,27 +151,58 @@ display: block;
 
 		&:hover {
 			color: $color_hover;
-		}
-		
+		}	
 	}
 	
 	.icon-search i {
 		cursor: pointer;
 		color: $color_fonts;
-
-
 	}
 	
 	label .search-field::placeholder {
 		color: $color_hover;
-		
 	}
 	
 	.search-field {
 		outline: none;
 	}
+}
+
+.home .scrolled.main-navigation,
+.page-template-about .scrolled.main-navigation {
+
+	transition: 0.9s;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		transition: 0.7s;
+
+		li a {
+			color: $color_nav;
+
+			&:hover {
+				color: #404040;
+			}
+		}
+	}
+	.green-logo-header {
+		display: block;
+		transition: 0.7s;
+	}
+
+	.icon-search i {
+		color: $color_nav;
+		cursor: pointer;
+		transition: 0.7s;
+	}
+
+	label .search-field::placeholder {
+		color: $color__text-main;
+	}
 
 }
+
 
 
 

@@ -491,7 +491,8 @@ a {
 .blog .main-navigation,
 .search .main-navigation,
 .page-id-62 .main-navigation,
-.error404 .main-navigation {
+.error404 .main-navigation,
+.scrolled.main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,7 +513,8 @@ a {
   .blog .main-navigation .green-logo-header,
   .search .main-navigation .green-logo-header,
   .page-id-62 .main-navigation .green-logo-header,
-  .error404 .main-navigation .green-logo-header {
+  .error404 .main-navigation .green-logo-header,
+  .scrolled.main-navigation .green-logo-header {
     max-width: 3rem;
     margin-left: 5rem; }
   .archive .main-navigation .white-logo-header,
@@ -520,14 +522,16 @@ a {
   .blog .main-navigation .white-logo-header,
   .search .main-navigation .white-logo-header,
   .page-id-62 .main-navigation .white-logo-header,
-  .error404 .main-navigation .white-logo-header {
+  .error404 .main-navigation .white-logo-header,
+  .scrolled.main-navigation .white-logo-header {
     display: none; }
   .archive .main-navigation .menu,
   .single .main-navigation .menu,
   .blog .main-navigation .menu,
   .search .main-navigation .menu,
   .page-id-62 .main-navigation .menu,
-  .error404 .main-navigation .menu {
+  .error404 .main-navigation .menu,
+  .scrolled.main-navigation .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -539,7 +543,8 @@ a {
   .blog .main-navigation .menu a,
   .search .main-navigation .menu a,
   .page-id-62 .main-navigation .menu a,
-  .error404 .main-navigation .menu a {
+  .error404 .main-navigation .menu a,
+  .scrolled.main-navigation .menu a {
     text-decoration: none;
     text-transform: uppercase;
     padding-right: 10px;
@@ -549,14 +554,16 @@ a {
     .blog .main-navigation .menu a:hover,
     .search .main-navigation .menu a:hover,
     .page-id-62 .main-navigation .menu a:hover,
-    .error404 .main-navigation .menu a:hover {
+    .error404 .main-navigation .menu a:hover,
+    .scrolled.main-navigation .menu a:hover {
       color: #404040; }
   .archive .main-navigation .icon-search i,
   .single .main-navigation .icon-search i,
   .blog .main-navigation .icon-search i,
   .search .main-navigation .icon-search i,
   .page-id-62 .main-navigation .icon-search i,
-  .error404 .main-navigation .icon-search i {
+  .error404 .main-navigation .icon-search i,
+  .scrolled.main-navigation .icon-search i {
     color: #248a83;
     cursor: pointer; }
 
@@ -618,6 +625,46 @@ a {
   .home .main-navigation .search-field,
   .page-template-about .main-navigation .search-field {
     outline: none; }
+
+.home .scrolled.main-navigation,
+.page-template-about .scrolled.main-navigation {
+  -webkit-transition: 0.9s;
+  transition: 0.9s; }
+  .home .scrolled.main-navigation ul,
+  .page-template-about .scrolled.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+    .home .scrolled.main-navigation ul li a,
+    .page-template-about .scrolled.main-navigation ul li a {
+      color: #248a83; }
+      .home .scrolled.main-navigation ul li a:hover,
+      .page-template-about .scrolled.main-navigation ul li a:hover {
+        color: #404040; }
+  .home .scrolled.main-navigation .green-logo-header,
+  .page-template-about .scrolled.main-navigation .green-logo-header {
+    display: block;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+  .home .scrolled.main-navigation .icon-search i,
+  .page-template-about .scrolled.main-navigation .icon-search i {
+    color: #248a83;
+    cursor: pointer;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+  .home .scrolled.main-navigation label .search-field::-webkit-input-placeholder,
+  .page-template-about .scrolled.main-navigation label .search-field::-webkit-input-placeholder {
+    color: #404040; }
+  .home .scrolled.main-navigation label .search-field:-ms-input-placeholder,
+  .page-template-about .scrolled.main-navigation label .search-field:-ms-input-placeholder {
+    color: #404040; }
+  .home .scrolled.main-navigation label .search-field::-ms-input-placeholder,
+  .page-template-about .scrolled.main-navigation label .search-field::-ms-input-placeholder {
+    color: #404040; }
+  .home .scrolled.main-navigation label .search-field::placeholder,
+  .page-template-about .scrolled.main-navigation label .search-field::placeholder {
+    color: #404040; }
 
 .site-header {
   position: fixed; }
