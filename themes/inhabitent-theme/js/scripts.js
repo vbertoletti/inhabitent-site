@@ -6,22 +6,16 @@ jQuery(document).ready(function($) {
     event.preventDefault();
 
     //Toggles the serach input field
-    $('.search-section-nav .search-field').addClass('search-active');
+    $('.search-field').addClass('search-active');
     // you can also try toggleClass or addClass and removeClass
 
-    //when clicking the icon, focus will be on the input field isntead of icon
-    $('.search-section-nav .search-field').focus();
+    //When clicking the icon, focus will be on the input field isntead of icon
+    $('.search-field').focus();
 
-    //when it loses focus by clicking somewhere else, hides the input field
-    $('.search-section-nav .search-field').on('blur', function(){
-        $('.search-section-nav .search-field').toggleClass('search-active');
+    //When it loses focus by clicking somewhere else, hides the input field
+    $('.search-field').on('blur', function(){
+        $('.search-field').toggleClass('search-active');
     });
 
-    //submits seach once enter key is pressed - answer from stackoverflow, link: https://stackoverflow.com/questions/979662/how-to-detect-pressing-enter-on-keyboard-using-jquery
-    $(document).keydown(function( event ) {
-        if ( event.which == 13 ) {
-            $('.search-section-nav .search-form').submit();
-        }
-    });
   });
 });

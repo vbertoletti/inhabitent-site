@@ -32,9 +32,9 @@
 				<div class="logo-container">
 
 				<a href="<?php echo home_url()?>" >
-				<img class="white-logo-header" src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-tent-white.svg">
+				<img class="white-logo-header" src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-tent-white.svg">
 
-				<img class="green-logo-header" src="<?php echo get_template_directory_uri(); ?>/assets/images/inhabitent-logo-tent.svg">
+				<img class="green-logo-header" src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-tent.svg">
 				</a>
 
 				</div>
